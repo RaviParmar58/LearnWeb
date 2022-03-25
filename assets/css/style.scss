@@ -1,0 +1,113 @@
+@import 'variable';
+@import 'mixin';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+// Common Css
+
+*{
+    padding: $p-0;
+    margin: $m-0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.section{@include section}
+
+h1{@include h1}
+
+h2{@include h2}
+
+h3{@include h3}
+
+p{@include p}
+
+.main-title p{
+    font-style: italic;
+    margin-bottom: 85px;
+}
+
+
+// Header Start
+
+.header .navbar{
+    min-height: 80px;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+
+    a{
+       color: $secondary-color;
+       font-family: $primary-font;
+       font-size: $nav-fs;
+       font-weight: $fw-500;
+
+       &:hover{
+           color: $primary-color;
+       }
+    }
+
+    a.active{
+        color: $primary-color;
+       }
+}
+
+// Header End
+
+// home-banner Start
+
+.home-banner{
+    background-image: url(../img/hero-banner.jpg);
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+
+    .banner-inner{
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        transform: translateY(-50%);
+
+        p{
+            font-size: 20px;
+            color: $secondary-color
+        }
+
+        .primary-btn{
+            @include primary-btn;
+            
+            &:hover{
+                color: $primary-color;
+                background-color: $transparent;
+                border: 1px solid $primary-color;
+            }
+        }
+        
+        .secondary-btn{
+            @include secondary-btn;
+
+            &:hover{
+                color: $secondary-color;
+                background-color: $transparent;
+                border: 1px solid $secondary-color;
+            }
+        }
+
+    }
+}
+
+// home-banner End
+
+.feature .feature-box{
+    background-color: $bg-gray;
+    padding: 40px 36px;
+
+    .feature-icon{
+        color: $secondary-color;
+        font-size: 35px;
+    }
+}
+
+// home-banner End

@@ -1,0 +1,53 @@
+@mixin section {
+    padding: 100px 0;    
+}
+
+@mixin h {
+    font-family: $primary-font;
+    color: $secondary-color;
+    font-weight: $fw-600;
+}
+
+@mixin h1 {
+    @include h;
+    font-size: $h1-fs !important;
+}
+
+@mixin h2 {
+    @include h;
+    font-size: $h2-fs !important;
+}
+
+@mixin h3 {
+    @include h;
+    font-size: $h3-fs !important;
+    margin: 16px 0 10px !important;
+}
+
+@mixin p {
+    font-family: $secondary-font;
+    font-size: $p-fs;
+    color: $gray-color;
+}
+
+@mixin btn-common {
+    font-size: $btn-fs;
+    font-weight: 500;
+    padding: $p-btn;  
+    font-family: $secondary-font;  
+}
+
+@mixin primary-btn{
+    color: $secondary-color;
+    background-color: $primary-color;
+    @include btn-common;
+    
+}
+
+@mixin secondary-btn{
+    color: $primary-color;
+    background-color: $secondary-color;
+    @include btn-common;
+    
+}
+

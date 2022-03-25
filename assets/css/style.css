@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  color: #002347;
+  font-weight: 600 !important;
+  font-size: 48px !important;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  color: #002347;
+  font-weight: 600 !important;
+  font-size: 36px !important;
+}
+
+h3 {
+  font-family: "Rubik", sans-serif;
+  color: #002347;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  margin: 16px 0 10px !important;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #7b838a;
+}
+
+.main-title p {
+  font-style: italic;
+  margin-bottom: 85px;
+}
+
+.header .navbar {
+  min-height: 80px;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+
+.header .navbar a {
+  color: #002347;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 500 !important;
+}
+
+.header .navbar a:hover {
+  color: #fdc632;
+}
+
+.header .navbar a.active {
+  color: #fdc632;
+}
+
+.home-banner {
+  background-image: url(../img/hero-banner.jpg);
+  width: 100%;
+  height: 900px;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.home-banner .banner-inner {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.home-banner .banner-inner p {
+  font-size: 20px;
+  color: #002347;
+}
+
+.home-banner .banner-inner .primary-btn {
+  color: #002347;
+  background-color: #fdc632;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 15px 48px;
+  font-family: "Roboto", sans-serif;
+}
+
+.home-banner .banner-inner .primary-btn:hover {
+  color: #fdc632;
+  background-color: transparent;
+  border: 1px solid #fdc632;
+}
+
+.home-banner .banner-inner .secondary-btn {
+  color: #fdc632;
+  background-color: #002347;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 15px 48px;
+  font-family: "Roboto", sans-serif;
+}
+
+.home-banner .banner-inner .secondary-btn:hover {
+  color: #002347;
+  background-color: transparent;
+  border: 1px solid #002347;
+}
+
+.feature .feature-box {
+  background-color: #f9f9ff;
+  padding: 40px 36px;
+}
+
+.feature .feature-box .feature-icon {
+  color: #002347;
+  font-size: 35px;
+}
+/*# sourceMappingURL=style.css.map */
